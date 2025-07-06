@@ -1,0 +1,104 @@
+@charset "utf-8";
+
+/* header.css */
+
+/*------------------- header --------------- */
+header {
+    width: 100%;
+    height: 100px;
+
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+
+    background-color: rgba(0, 0, 0, 0.7);
+    /* outline: 2px solid red; */
+}
+
+.share-inner {
+    width: 100%;
+    max-width: 1620px;
+    margin: 0 auto;
+    /* outline: 2px solid blue; */
+
+    position: relative;
+}
+
+header .h-logo {}
+
+.h-logo>h1 {}
+
+.h-logo>h1>a {}
+
+.h-logo>h1>a>img {
+    float: left;
+    /* outline: 2px solid white; */
+    display: block;
+
+    padding: 30px 0;
+}
+
+header nav {
+    position: absolute;
+
+    left: 50%;
+    top: 0;
+
+    transform: translateX(-50%);
+}
+
+header nav .gnb {}
+
+header nav .gnb>li {
+    float: left;
+    position: relative;
+    /* lnb 기준 */
+
+    /* background-color: blueviolet; */
+}
+
+header nav .gnb>li~li {
+    margin-left: 80px;
+}
+
+header nav .gnb>li>a {
+    font-size: 20px;
+    line-height: 100px;
+    color: white;
+    font-weight: 400;
+    padding: 0 10px;
+}
+
+.gnb li .lnb {
+    width: 100px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid white;
+    overflow: hidden;
+
+    position: absolute;
+
+    transform: translateY(-16px);
+
+    display: none;
+}
+
+.gnb li .lnb li {
+    padding: 10px 0;
+}
+
+.gnb li .lnb li a {
+    padding: 16px 12px;
+}
+
+header .h-icon {
+    float: right;
+    padding-top: 34.5px;
+}
+
+header .h-icon a {}
+
+header .h-icon a img {
+    float: left;
+    margin-left: 30px;
+}

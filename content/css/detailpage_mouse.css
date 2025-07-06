@@ -1,0 +1,359 @@
+@charset "utf-8";
+/* detailpage_mouse */
+
+* {
+    margin: 0;
+    padding: 0;
+    /* outline: 1px solid red; */
+}
+
+body,
+html {
+    /* background-color: black; */
+    width: 100%;
+    height: 100%;
+    /* overflow-x: hidden */
+}
+
+
+ul::after,
+ol::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: white;
+
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: #ccc;
+}
+
+p {
+    color: white;
+}
+
+.clear::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.inner {
+    width: 100%;
+    max-width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    /* outline: 2px solid lime; */
+}
+
+
+/*------------------- header --------------- */
+header {
+    width: 100%;
+    height: 100px;
+
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+
+    border-bottom: 1px solid white;
+
+    background-color: rgba(0, 0, 0, 0.7);
+    /* outline: 2px solid red; */
+}
+
+.share-inner {
+    width: 100%;
+    max-width: 1620px;
+    margin: 0 auto;
+    /* outline: 2px solid blue; */
+
+    position: relative;
+}
+
+header .h-logo {}
+
+.h-logo>h1 {}
+
+.h-logo>h1>a {}
+
+.h-logo>h1>a>img {
+    float: left;
+    /* outline: 2px solid white; */
+    display: block;
+
+    padding: 30px 0;
+}
+
+header nav {
+    position: absolute;
+
+    left: 50%;
+    top: 0;
+
+    transform: translateX(-50%);
+}
+
+header nav .gnb {}
+
+header nav .gnb>li {
+    float: left;
+    position: relative;
+    /* lnb 기준 */
+
+    /* background-color: blueviolet; */
+}
+
+header nav .gnb>li~li {
+    margin-left: 80px;
+}
+
+header nav .gnb>li>a {
+    font-size: 20px;
+    line-height: 100px;
+    color: white;
+    font-weight: 400;
+    padding: 0 10px;
+}
+
+.gnb li .lnb {
+    width: 100px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid white;
+    overflow: hidden;
+
+    position: absolute;
+
+    transform: translateY(-16px);
+
+    display: none;
+}
+
+.gnb li .lnb li {
+}
+
+.gnb li .lnb li a {
+    padding: 16px 12px;
+}
+
+header #h-icon {
+    float: right;
+    padding-top: 40px;
+}
+
+header #h-icon a {
+    float: left;
+    margin-left: 30px;
+}
+
+/* --------------------------------------------------page */
+
+section {
+    background-color: black;
+}
+
+
+.page {
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+}
+
+.page1 {
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+}
+
+
+.p-title {
+  background-image: url(../img/bg.png);
+  background-size: cover;
+  background-position: center; 
+  height: 1080px;
+  display: flex;
+  align-items: center;
+}
+
+.p-content {
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.p-imgbox {
+  float: left;
+  width: 45%;
+}
+
+.p-imgbox img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.p-txt {
+  float: right;
+  width: 50%;
+  word-break: keep-all;
+  padding-left: 40px;
+  box-sizing: border-box;
+}
+
+.p-txt .label {
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+.p-txt .title h2 {
+  font-size: 36px;
+  margin: 0;
+}
+
+.p-txt .title .subtitle {
+  font-size: 16px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  color: #bbb;
+}
+
+.p-txt .desc {
+  line-height: 1.6;
+  margin-bottom: 30px;
+  font-size: 15px;
+  color: #ddd;
+}
+
+.p-txt .buttons a {
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid #999;
+  padding-bottom: 2px;
+}
+
+
+.page .p-txtbox {
+    width: 40%;
+    text-align: center;
+    word-break: keep-all;
+    margin: 0 auto;
+
+    position: absolute;
+    z-index: 999;
+
+
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.page .p-txtbox h2 {
+    padding-bottom: 10px;
+    font-size: 34px;
+
+    text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.7);
+}
+
+.page .p-txtbox p {
+    font-size: 18px;
+    color: #e3e3e3;
+}
+
+.page img {
+    position: absolute;
+
+    left: 50%;
+    bottom: 0;
+
+    transform: translateX(-50%);
+}
+
+
+
+
+/* 페이저 내비게이션 */
+
+.side-pager {
+    /* outline: 2px solid plum; */
+
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5%;
+}
+
+.side-pager ul {}
+
+.side-pager ul li {
+    float: none;
+    margin: 10px 0;
+}
+
+.side-pager ul li a {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    box-sizing: border-box;
+
+    position: relative;
+    /* span의 기준! */
+}
+
+.side-pager ul li a span {
+    /* 메뉴글자를 담은 요소 */
+    display: block;
+    font-size: 14px;
+    font-weight: 300;
+
+    width: 100px;
+    letter-spacing: 2px;
+
+    position: absolute;
+    left: 200%;
+    top: -6px;
+
+    display: none;
+
+    /* outline: 1px solid red; */
+}
+
+/* .side-pager ul li a:hover {
+    background-color: #fff;
+} */
+.side-pager ul li a:hover span {
+    display: block;
+}
+
+/* 선택된 페이저 디자인 */
+.side-pager ul li.on a {
+    background-color: #fff;
+}
+
+.side-pager ul li.on a span {
+    display: block;
+}
+
