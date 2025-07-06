@@ -434,16 +434,16 @@ main .mouse-icon img {
     bottom: -3px;
 }
 
-.btn-grp2 .btn-box2 {
+.btn-box2 {
     background-image: url(../img/buttonimg.png);
     background-color: rgba(60, 9, 67, 0.4);
 }
 
-.btn-grp2 .btn-box2 .btn2 {
+.btn-box2 .btn2 {
     text-align: center;
 }
 
-.btn-grp2 .btn-box2 .btn2 a {
+.btn-box2 .btn2 a {
     font-size: 24px;
     font-weight: 600;
 }
